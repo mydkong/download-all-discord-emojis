@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Visionneur d'émoji Discord</title>
+</head>
+<body>
+	<p><input type="number" placeholder="ID de l'émoji Discord"><button>OK</button></p>
+	<script type="text/javascript">
+		document.querySelector("button").addEventListener("click", ()=>{
+			document.querySelector("p").innerHTML='<img src="https://cdn.discordapp.com/emojis/'+document.querySelector("input").value+'.webp?size=48&animated=true">';
+		})
+	</script>
+</body>
+</html>
